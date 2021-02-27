@@ -28,7 +28,7 @@ SpeedControllerGroup rightMotorGroup = new SpeedControllerGroup(rightMotorSpark,
 
   public void teleopDrive(double move, double turn) {
     if (move > .5) move = .5;
-    drive.arcadeDrive(move, turn);
+    drive.tankDrive(move, turn);
   }
 
   @Override
